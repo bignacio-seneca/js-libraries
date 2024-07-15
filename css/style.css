@@ -1,4 +1,6 @@
 @import "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
 
 /* Lightbox */
 
@@ -210,7 +212,7 @@ body.lb-disable-scrolling {
   /* Lightbox */
 
  
-/* BODY */
+/* body */
  
 /* html {
     position: relative;
@@ -235,20 +237,19 @@ footer {
     
 }
 
-/* BODY */
-
-/* Navbar */
+/* navbar */
 
 .navbar > .container-fluid{
   padding: 0px 250px;
 }
 
-li{
+.navbar-nav li{
     background-color: white;
     border: 2px solid lightblue;
+    text-decoration: none;
 }
 
-/* Navbar */
+/* navbar */
 
 /* Parsley CSS */
 input.parsley-success,
@@ -286,3 +287,12 @@ textarea.parsley-error {
   opacity: 1;
 }
 /* Parsley CSS */
+
+/* Glide */
+
+
+.glide__slide img {
+  width: 100%;         /* Make the image take up the full width of the container */
+  height: 100%;        /* Make the image take up the full height of the container */
+  object-fit: cover;   /* Ensures the image covers the entire container without distortion */
+}
