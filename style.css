@@ -1,6 +1,6 @@
 @import "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css";
 
-/* LIGHTBOX */
+/* Lightbox */
 
 body.lb-disable-scrolling {
     overflow: hidden;
@@ -207,7 +207,7 @@ body.lb-disable-scrolling {
     opacity: 1;
   }
 
-  /* LIGHTBOX */
+  /* Lightbox */
 
  
 /* BODY */
@@ -231,13 +231,16 @@ footer {
 .boxes :hover{text-decoration:none;}
 .panel{border:solid 1px black;}
 
+.box{
+    
+}
+
 /* BODY */
 
-/* NAVBAR */
+/* Navbar */
 
-.navbar > .container {
-    display: inline-block;
-    background-color: pink;
+.navbar > .container-fluid{
+  padding: 0px 250px;
 }
 
 li{
@@ -245,5 +248,41 @@ li{
     border: 2px solid lightblue;
 }
 
-/* NAVBAR */
+/* Navbar */
 
+/* Parsley CSS */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: #B94A48;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+/* Parsley CSS */
